@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">JANJ</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="required"><font color='#FF0000'>*</font> Required </string>
+    <string name="firstname">Enter First Name <font color='#FF0000'>*</font></string>
+    <string name="lastname">Enter Last Name <font color='#FF0000'>*</font></string>
+    <string name="gradelevel">Enter Grade Level <font color='#FF0000'>*</font></string>
+    <string name="highschool">Enter High School <font color='#FF0000'>*</font></string>
+    <string name="city">Enter City <font color='#FF0000'>*</font></string>
+    <string name="email">Enter Email <font color='#FF0000'>*</font></string>
+    <string name="password">Enter Password (At least 6 characters)<font color='#FF0000'>*</font></string>
+    <string name="confirm">Confirm Password <font color='#FF0000'>*</font></string>
+
+    <string name="date">Date <font color='#FF0000'>*</font></string>
+    <string name="timestart">Time Started <font color='#FF0000'>*</font></string>
+    <string name="timeend">Time Ended <font color='#FF0000'>*</font></string>
+    <string name="selectevent">Select Event <font color='#FF0000'>*</font></string>
+    <string name="schoolCoord">Enter School Coordinator <font color='#FF0000'>*</font></string>
+    <string name="comments">Comments: If you specified \'Other\' in Events, please specify the event here. <font color='#FF0000'>*</font></string>
+
+    <string-array name="events">
+        <item>-</item>
+        <item>Be Entrepreneurial</item>
+        <item>BizTown (elementary or middle school)</item>
+        <item>Career Exploration</item>
+        <item>Career Speaker Series</item>
+        <item>Company Program</item>
+        <item>Elementary School Experiences</item>
+        <item>Finance Park</item>
+        <item>It\'s My Job - Soft Skills Workshops</item>
+        <item>Job Shadow</item>
+        <item>Launch Lessons</item>
+        <item>Mentorship Forums</item>
+        <item>Middle School Experiences</item>
+        <item>NJ Business Hall of Fame Ambassador</item>
+        <item>NextGen Tech Series</item>
+        <item>Personal Finance</item>
+        <item>Special Event Speaker</item>
+        <item>Titan Competition</item>
+        <item>Women\'s Future Leadership Forums</item>
+        <item>Other</item>
+    </string-array>
+</resources>

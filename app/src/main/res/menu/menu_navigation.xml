@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/id_logEntriesScreen"
+        android:title="Add Entry"
+        android:icon="@drawable/ic_add" />
+    <item
+        android:id="@+id/id_viewEntriesScreen"
+        android:title="Past Entries"
+        android:icon="@drawable/ic_history" />
+    <item
+        android:id="@+id/id_signout"
+        android:title="Sign Out"
+        android:icon="@drawable/ic_log_out" />
+</menu>

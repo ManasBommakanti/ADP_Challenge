@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="true">
+        <layer-list>
+            <item>
+                <shape>
+                    <gradient android:angle="270" android:endColor="#54C559" android:startColor="#54C559" />
+                    <corners android:radius="5dp" />
+                    <padding android:bottom="10dp" android:left="10dp" android:right="10dp" android:top="10dp" />
+                </shape>
+            </item>
+            <item android:drawable="@drawable/medalsback">
+                <bitmap android:gravity="center" android:src="@drawable/medalsback" android:tileMode="repeat" />
+            </item>
+        </layer-list>
+    </item>
+
+    <item android:state_enabled="true">
+        <layer-list>
+            <item>
+                <shape android:shape="rectangle">
+                    <gradient android:endColor="#449F48" android:startColor="#449F48"/>
+                    <corners android:radius="5dp" />
+                    <padding android:bottom="10dp" android:left="10dp" android:right="10dp" android:top="10dp" />
+
+                </shape>
+            </item>
+            <item android:drawable="@drawable/medalsback">
+                <bitmap android:gravity="center" android:src="@drawable/medalsback" android:tileMode="repeat" />
+            </item>
+        </layer-list>
+    </item>
+
+
+</selector>

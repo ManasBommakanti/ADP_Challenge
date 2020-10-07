@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/loginbackground">
+
+    <ScrollView
+        android:id="@+id/id_scroller"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/id_linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/id_signupLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:gravity="center"
+                android:paddingTop="30dp"
+                android:text="Settings"
+                android:textColor="#08683F"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/id_notifier"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:gravity="center"
+                android:text="Change elements by clicking on them" />
+
+            <LinearLayout
+                android:id="@+id/id_changeNameInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingTop="30dp"
+                android:clickable="true"
+                android:descendantFocusability="blocksDescendants"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:id="@+id/id_changeNameLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/montserrat"
+                    android:clickable="false"
+                    android:paddingBottom="3dp"
+                    android:text="Name" />
+
+                <TextView
+                    android:id="@+id/id_changeNameInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="#000000"
+                    android:background="@drawable/rounded"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:clickable="false"
+                    android:padding="10dp"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/id_gradeChangeInfo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingTop="30dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:id="@+id/id_gradeLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat"
+                    android:gravity="center"
+                    android:paddingBottom="3dp"
+                    android:text="Grade Level" />
+
+                <TextView
+                    android:id="@+id/id_gradeChangeInput"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:enabled="false"
+                    android:background="@drawable/rounded"
+                    android:ems="3"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:maxLength="2"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/id_hsChangeInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="40dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:id="@+id/id_changeHighSchoolLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/montserrat"
+                    android:text="High school" />
+
+
+                <TextView
+                    android:id="@+id/id_changeHighSchoolInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="#000000"
+                    android:enabled="false"
+                    android:background="@drawable/rounded"
+                    android:padding="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/id_cityChangeInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="40dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:id="@+id/id_changeCityLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/montserrat"
+                    android:text="City" />
+
+
+                <TextView
+                    android:id="@+id/id_changeCityInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:enabled="false"
+                    android:textColor="#000000"
+                    android:background="@drawable/rounded"
+                    android:padding="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/id_phoneChangeInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="40dp">
+
+                <TextView
+                    android:id="@+id/id_changePhoneNumLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="Phone number" />
+
+                <TextView
+                    android:id="@+id/id_changePhoneNumInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:enabled="false"
+                    android:textColor="#000000"
+                    android:background="@drawable/rounded"
+                    android:ems="10"
+                    android:padding="10dp"
+                    android:paddingLeft="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/id_emailChangeInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical"
+                android:paddingTop="30dp">
+
+                <TextView
+                    android:id="@+id/id_changeEmailLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="Email" />
+
+                <TextView
+                    android:id="@+id/id_changeEmailInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:textColor="#000000"
+                    android:enabled="false"
+                    android:background="@drawable/rounded"
+                    android:ems="10"
+                    android:padding="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/id_passwordCreationChange"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="50dp">
+
+                <TextView
+                    android:id="@+id/id_passInputChange"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="CHANGE PASSWORD"
+                    android:textColor="#000000" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/id_appExits"
+                android:paddingTop="30dp"
+                android:paddingBottom="20dp"
+                android:orientation="vertical">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded2"
+                    android:fontFamily="@font/montserrat"
+                    android:text="Sign out"
+                    android:textAllCaps="true"
+                    android:textColor="#FFFFFF"
+                    android:id="@+id/id_signoutButton">
+                </Button>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded3"
+                    android:fontFamily="@font/montserrat"
+                    android:text="Delete Account"
+                    android:textAllCaps="true"
+                    android:textColor="#FFFFFF"
+                    android:id="@+id/id_deleteAccount"
+                    android:layout_marginTop="20dp">
+                </Button>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

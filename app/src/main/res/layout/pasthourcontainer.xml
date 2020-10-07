@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="20dp"
+        android:id="@+id/id_expandable"
+        android:paddingBottom="10dp">
+
+        <LinearLayout
+            android:id="@+id/id_eventLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/id_eventType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:gravity="center"
+                android:text="Event Type:"
+                android:textColor="#039A5A"
+                android:textSize="10pt" />
+
+            <TextView
+                android:id="@+id/id_eventTypeLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/archivo_narrow"
+                android:gravity="center"
+                android:text="TextView"
+                android:textColor="#FFFFFF"
+                android:textSize="8pt" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/id_startTimeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/id_startTimeType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:gravity="center"
+                android:text="Start Time:"
+                android:textColor="#039A5A"
+                android:textSize="10pt" />
+
+            <TextView
+                android:id="@+id/id_startTimeTypeLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/archivo_narrow"
+                android:gravity="center"
+                android:text="TextView"
+                android:textColor="#FFFFFF"
+                android:textSize="8pt" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/id_endTimeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/id_endTimeType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:gravity="center"
+                android:text="End Time:"
+                android:textColor="#039A5A"
+                android:textSize="10pt" />
+
+            <TextView
+                android:id="@+id/id_endTimeTypeLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/archivo_narrow"
+                android:gravity="center"
+                android:text="TextView"
+                android:textColor="#FFFFFF"
+                android:textSize="8pt" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/id_coordLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/id_coordType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:gravity="center"
+                android:text="School Coordinator:"
+                android:textColor="#039A5A"
+                android:textSize="10pt" />
+
+            <TextView
+                android:id="@+id/id_coordTypeLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/archivo_narrow"
+                android:gravity="center"
+                android:text="TextView"
+                android:textColor="#FFFFFF"
+                android:textSize="8pt" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/id_commentsType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingBottom="30dp">
+
+            <TextView
+                android:id="@+id/id_eventCommentsType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:gravity="center"
+                android:text="Comments:"
+                android:textColor="#039A5A"
+                android:textSize="10pt" />
+
+            <TextView
+                android:id="@+id/id_eventCommentsLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/archivo_narrow"
+                android:gravity="center"
+                android:text="TextView"
+                android:textColor="#FFFFFF"
+                android:textSize="8pt" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/id_deleteEventButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded2"
+            android:focusable="false"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:text="Delete Event"
+            android:textColor="#FFFFFF">
+
+        </Button>
+    </LinearLayout>
+</LinearLayout>

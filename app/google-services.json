@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "241102338606",
+    "firebase_url": "https://adp-app-challenge.firebaseio.com",
+    "project_id": "adp-app-challenge",
+    "storage_bucket": "adp-app-challenge.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:241102338606:android:745948e594d405d23dfdbf",
+        "android_client_info": {
+          "package_name": "com.example.appchallenge"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "241102338606-ijqi1744ielgn8amjobens7spp471i18.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCr5-IBvIY6jVLsTTEYPA0TUSzZcIdUeNs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "241102338606-ijqi1744ielgn8amjobens7spp471i18.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

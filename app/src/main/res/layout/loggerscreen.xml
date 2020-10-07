@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginbackground"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/id_addHoursLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:gravity="center_horizontal"
+                android:paddingTop="30dp"
+                android:text="New Entry"
+                android:textColor="#08683F"
+                android:textSize="30sp" />
+
+            <LinearLayout
+                android:id="@+id/id_periods"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="20dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:id="@+id/id_initialLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/montserrat"
+                    android:gravity="center"
+                    android:paddingBottom="15dp"
+                    android:text="@string/date" />
+
+
+                <DatePicker
+                    android:id="@+id/id_calendarInitial"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/rounded"
+                    android:padding="10dp"
+                    android:calendarViewShown="false"
+                    android:datePickerMode="spinner">
+
+                </DatePicker>
+
+                <TextView
+                    android:id="@+id/id_initialTimeLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/montserrat"
+                    android:gravity="center"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:text="@string/timestart" />
+
+                <TimePicker
+                    android:id="@+id/id_timeStart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/rounded"
+                    android:padding="10dp"
+                    android:timePickerMode="spinner">
+
+                </TimePicker>
+
+                <TextView
+                    android:id="@+id/id_finalLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/montserrat"
+                    android:gravity="center"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="15dp"
+                    android:text="@string/timeend" />
+
+                <TimePicker
+                    android:id="@+id/id_timeEnd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/rounded"
+                    android:padding="10dp"
+                    android:timePickerMode="spinner">
+
+                </TimePicker>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/id_events"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingTop="20dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:id="@+id/id_eventDropdownLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat"
+                    android:text="@string/selectevent" />
+
+                <Spinner
+                    android:id="@+id/id_eventDropdown"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:dropDownSelector="@drawable/rounded"
+                    android:padding="10dp"
+                    android:background="@drawable/rounded"
+                    android:spinnerMode="dropdown"
+                    android:entries="@array/events"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/id_schoolCoord"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:id="@+id/id_schoolCoordLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat"
+                    android:text="@string/schoolCoord" />
+
+                <EditText
+                    android:id="@+id/id_schoolCoordInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:padding="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/id_commentSection"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:id="@+id/id_commentSectionLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat"
+                    android:text="@string/comments" />
+
+                <EditText
+                    android:id="@+id/id_commentSectionInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded"
+                    android:ems="10"
+                    android:gravity="top|left"
+                    android:inputType="textPersonName|textMultiLine"
+                    android:minHeight="100dp"
+                    android:padding="10dp"
+                    android:scrollbars="vertical"
+                    android:scrollHorizontally="false" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/id_newEntryHolder"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingTop="20dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="40dp">
+
+                <Button
+                    android:id="@+id/id_addNewEntry"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded2"
+                    android:fontFamily="@font/montserrat"
+                    android:padding="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="20dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="50dp"
+                    android:text="Add Entry"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
