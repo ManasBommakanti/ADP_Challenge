@@ -1,4 +1,4 @@
-# ADP_Challenge
+# ADP Challenge
 ADP Challenge App Submission
 
 Our group created an interactive app that allows users to easily tabulate their hours and send hours to advisors. It utilizes several Android built-in resources as 
